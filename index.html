@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="container">
+      <h2>Your Journey Starts Here!</h2>
+      <div class="form">
+        <div class="input-group">
+          <label for="from">
+            <i class="fa-solid fa-plane-departure"></i>
+          </label>
+          <input type="text" id="from" placeholder="From" required />
+        </div>
+        <div class="input-group">
+          <label for="to">
+            <i class="fa-solid fa-plane-arrival"></i>
+          </label>
+          <input type="text" id="to" placeholder="To" required />
+        </div>
+        <div class="input-group">
+          <label for="date">
+            <i class="fa-regular fa-calendar"></i>
+          </label>
+          <input type="date" id="date" value="new Date()" required />
+        </div>
+        <div class="input-group">
+          <label for="guest">
+            <i class="fa-regular fa-user"></i>
+          </label>
+          <input
+            type="number"
+            id="guest"
+            placeholder="Guest"
+            min="1"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="seat">Seat</label>
+        </div>
+        <button type="submit">Book</button>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="hero">
+        <div class="header">
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <nav class="nav-bar">
+            <ul>
+              <li>
+                <img src="./images/flight.png" alt="" />
+                <h6>Flights</h6>
+              </li>
+              <li>
+                <img src="./images/bed.png" alt="" />
+                <h6>Holiday Hotel</h6>
+              </li>
+              <li>
+                <img src="./images/car.png" alt="" />
+                <h6>Car Rental</h6>
+              </li>
+              <li>
+                <img src="./images/time.png" alt="" />
+                <h6>My Trips</h6>
+              </li>
+              <li>
+                <img src="./images/call.png" alt="" />
+                <h6>Contact Us</h6>
+              </li>
+              <li>
+                <img src="./images/setting.png" alt="" />
+                <h6>Services</h6>
+              </li>
+            </ul>
+          </nav>
+          <div></div>
+        </div>
+        <div class="hero-slideshow-wrapper">
+          <div class="hero-slideshow">
+            <img class="hero-slide" src="images/Antarcticaaaa.png" />
+            <img class="hero-slide" src="images/Group 29.png" />
+            <img class="hero-slide" src="images/Group 30.png" />
+            <img class="hero-slide" src="images/Group 31.png" />
+            <img class="hero-slide" src="images/Group 32.png" />
+            <img class="hero-slide" src="images/Group 33.png" />
+            <img class="hero-slide" src="images/North America.png" />
+
+            <img class="hero-slide" src="images/Antarcticaaaa.png" />
+          </div>
+        </div>
+        <div class="hero-text">
+          <h2>Special Offers</h2>
+          <div class="offer-cards">
+            <div class="offer-card">
+              <img src="images/sp1.avif" alt="Antarctic Peninsula" />
+              <div class="offer-info">
+                <h3 class="offer-place">Antarctic Peninsula</h3>
+                <p class="offer-from-place">From Mumbai(BOM)</p>
+                <p class="offer-from-date">From: 14th July 2024</p>
+                <p class="offer-to-date">To: 27th July 2024</p>
+                <p class="price">
+                  <span class="old-price">₹432159.00</span>
+                  <span class="new-price"
+                    >₹345000.00
+                    <span>per adult</span>
+                  </span>
+                </p>
+                <button>Book Now</button>
+              </div>
+            </div>
+            <div class="offer-card">
+              <img src="images/sp2.avif" alt="Drake Passage" />
+              <div class="offer-info">
+                <h3 class="offer-place">Drake Passage</h3>
+                <p class="offer-from-place">From Mumbai(BOM)</p>
+                <p class="offer-from-date">From: 14th August 2024</p>
+                <p class="offer-to-date">To: 27th August 2024</p>
+                <p class="price">
+                  <span class="old-price">₹831250.00</span>
+                  <span class="new-price"
+                    >₹645000.00
+                    <span>per adult</span>
+                  </span>
+                </p>
+                <button>Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="booking-form">
+        <div class="header-right">
+          <div class="language">
+            <i class="fa-solid fa-globe"></i> <span>EN</span>
+          </div>
+          <div class="user-icon">
+            <i class="fa-solid fa-user"></i>
+            <span>Sign In</span>
+          </div>
+        </div>
+        <img src="images/Logo.png" alt="Airplane" />
+        <h2>Book a Flight</h2>
+        <div class="trip-type">
+          <button>One Way</button>
+          <button>Round Trip</button>
+          <button>Multi City</button>
+        </div>
+        <form>
+          <div class="form-group">
+            <div class="form-field">
+              <label>From</label>
+              <input class="form-airport" type="text" value="BOM" />
+              <input class="form-city" type="text" value="Mumbai" />
+            </div>
+            <i class="fa-solid fa-exchange"></i>
+            <div class="form-field">
+              <label>To</label>
+              <input class="form-airport" type="text" value="YOW" />
+              <input class="form-city" type="text" value="Ottawa" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-field">
+              <label>Departure Date</label>
+              <input type="date" value="2024-07-12" />
+            </div>
+            <div class="form-field">
+              <label>Return Date</label>
+              <input type="date" value="2024-08-17" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-field">
+              <label>Passengers</label>
+              <input type="number" value="2" />
+            </div>
+            <div class="form-field">
+              <label>Class</label>
+              <input type="text" value="Economy" />
+            </div>
+          </div>
+          <button type="submit">Check Availability</button>
+          <div class="form-icons">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="packages">
+      <img src="images/TopPicks.png" alt="Airplane" />
+      <div class="packages-grid">
+        <div class="card">
+          <img src="./images/packages/Moscow.jpeg" alt="Card image" />
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <div class="card-title">St Basils Cathedral, Moscow</div>
+                <div class="card-details">
+                  <span>7 days</span>
+                  <span>5 <i class="fa-solid fa-star"></i></span>
+                </div>
+              </div>
+              <div class="card-price">₹ 70000</div>
+            </div>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+              efficitur odio. Nulla dapibus arcu ut quam facilisis.
+            </div>
+            <button>DETAILS</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/packages/China.jpeg" alt="Card image" />
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Zhangye National Park, China</div>
+                <div class="card-details">
+                  <span>5 days</span>
+                  <span>4 <i class="fa-solid fa-star"></i></span>
+                </div>
+              </div>
+              <div class="card-price">₹ 60000</div>
+            </div>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+              efficitur odio. Nulla dapibus arcu ut quam facilisis.
+            </div>
+            <button>DETAILS</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/packages/London.jpeg" alt="Card image" />
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Tower Bride, London</div>
+                <div class="card-details">
+                  <span>10 days</span>
+                  <span>5 <i class="fa-solid fa-star"></i></span>
+                </div>
+              </div>
+              <div class="card-price">₹ 150000</div>
+            </div>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+              efficitur odio. Nulla dapibus arcu ut quam facilisis.
+            </div>
+            <button>DETAILS</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/packages/Greece.jpeg" alt="Card image" />
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Oia, Santorini, Greece</div>
+                <div class="card-details">
+                  <span>7 days</span>
+                  <span>4 <i class="fa-solid fa-star"></i></span>
+                </div>
+              </div>
+              <div class="card-price">₹ 120000</div>
+            </div>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+              efficitur odio. Nulla dapibus arcu ut quam facilisis.
+            </div>
+            <button>DETAILS</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/packages/Northern Lights.jpeg" alt="Card image" />
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Nordlys over Arnøya, Skjervøy</div>
+                <div class="card-details">
+                  <span>6 days</span>
+                  <span>5 <i class="fa-solid fa-star"></i></span>
+                </div>
+              </div>
+              <div class="card-price">₹ 90000</div>
+            </div>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+              efficitur odio. Nulla dapibus arcu ut quam facilisis.
+            </div>
+            <button>DETAILS</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/packages/Egypt.jpeg" alt="Card image" />
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Temple Hopping, Egypt</div>
+                <div class="card-details">
+                  <span>5 days</span>
+                  <span>4 <i class="fa-solid fa-star"></i></span>
+                </div>
+              </div>
+              <div class="card-price">₹ 100000</div>
+            </div>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+              efficitur odio. Nulla dapibus arcu ut quam facilisis.
+            </div>
+            <button>DETAILS</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/packages/Costa Rica.jpeg" alt="Card image" />
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Costa Rica, Central America</div>
+                <div class="card-details">
+                  <span>4 days</span>
+                  <span>5 <i class="fa-solid fa-star"></i></span>
+                </div>
+              </div>
+              <div class="card-price">₹ 50000</div>
+            </div>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+              efficitur odio. Nulla dapibus arcu ut quam facilisis.
+            </div>
+            <button>DETAILS</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/packages/UK.jpeg" alt="Card image" />
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Cotswolds, United Kingdom</div>
+                <div class="card-details">
+                  <span>8 days</span>
+                  <span>4 <i class="fa-solid fa-star"></i></span>
+                </div>
+              </div>
+              <div class="card-price">₹ 80000</div>
+            </div>
+            <div class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
+              efficitur odio. Nulla dapibus arcu ut quam facilisis.
+            </div>
+            <button>DETAILS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <img src="images/Logo.png" alt="Airplane" />
+        <p>Lorem ipsum</p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>Flights</li>
+          <li>Holiday Hotel</li>
+          <li>Car Rental</li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe to our newsletter to get the latest updates</p>
+        <form>
+          <input type="email" placeholder="Enter your email" />
+
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
